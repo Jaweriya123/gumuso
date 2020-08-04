@@ -1,0 +1,91 @@
+@mixin hover_line($background, $width) {
+    &::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background:$background;
+        transition: width .3s;
+    }
+    &:hover{
+        &::after{
+           width: $width;
+        }
+    }
+
+}
+@mixin nav-action{
+    .nav-action{
+        padding-top: 5px !important;
+        padding-bottom: 4px !important;
+        @include hover_line(#000, 60%);
+          a{
+            color:  #5a5a5a !important;
+            font-family: 'Arimo',sans-serif !important;
+            text-transform: none;
+            text-decoration: none;
+            font-weight: 400;
+            width: 100%;
+            &:hover{
+                color: #000 !important;
+            }
+        }
+}
+}
+@mixin black-btn($width){
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Rajdhani',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    background-color: #1e1e1e;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid #1e1e1e; 
+    width: $width;
+    color: #fff;
+    text-align: center;
+    border-radius: 0px;
+    &:hover{
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+}
+@mixin media-breakpoint-between{
+    @media (max-width: 1015px) {
+        .site-nav{
+            display: none;
+        }
+       .announcment-msg{
+           height: auto;
+           p{
+               margin: 0;
+           }
+       }
+    .header-PC{
+        display: none;
+    }
+    .header-mobile{
+        display: block;
+        padding: 11px 54px;
+        width: 100%;
+        justify-content: space-between;
+        background: #000;
+        height: 50px;
+       &__container{
+           display: flex;
+           justify-content: space-between;
+        ul{
+            list-style: none;
+            padding: 0;
+            display: flex;
+          li{
+             margin-right:12px; 
+             i{
+                color: #fff;
+                font-size:25px;
+               }
+          }
+        }
+    }
+    }
+    }
+}

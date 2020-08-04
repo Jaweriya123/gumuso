@@ -1,0 +1,112 @@
+<div class="home-content">
+    <div class="home-content__wrapper">
+        <div class="home-content__banner">
+            <img src="../../assets/images/banner-parallax-1-1.webp">
+            <div class="home-content__description">
+                <h2>NEW RELEASES</h2>
+                <p>Quisquemos sodales suscipit ditaemcos condimentum de cosmo.</p>
+                <button type="button" class=" shop_now"> Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+<div class="product-container">
+    <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide> 
+             <div class="product_card">
+            <div class=" product_card__image" >
+                <img  id="expandedImg"  src="../../assets/images/card_1.webp"  onmouseover="this.src='../../assets/images/card_1-1.webp'" onmouseout="this.src='../../assets/images/card_1.webp'">
+                <div class="popup-btn">+ quick more</div>
+            </div>
+            <div class=" product_card__description" >
+                  <div class="d-flex">
+                 <h6><a href="#">Delementum milancelos preteus tomuir</a></h6>
+                  <span class="variant-name">medium purple</span>
+                </div>
+                  <p class="price">from $69.0</p>
+                  <div class="color-span row">
+                      <span class="color-circle red" onclick="showimg1()"></span>
+                      <span class="color-circle green" onclick="document.getElementById('expandedImg').src='../../assets/images/card_2.webp'"></span>
+                      <span class="color-circle yellow" onclick="document.getElementById('expandedImg').src='../../assets/images/card_1-1.webp'"></span>
+                  </div>
+              </div>
+        </div></ng-template>  
+        <ng-template carouselSlide>
+                <div class="product_card">
+                        <div class=" product_card__image" >
+                            <img  id="expandedImg"  src="../../assets/images/card_1.webp"  onmouseover="this.src='../../assets/images/card_1-1.webp'" onmouseout="this.src='../../assets/images/card_1.webp'">
+                            <div class="popup-btn">+ quick more</div>
+                        </div>
+                        <div class=" product_card__description" >
+                              <div class="d-flex">
+                             <h6><a href="#">Delementum milancelos preteus tomuir</a></h6>
+                              <span class="variant-name">medium purple</span>
+                            </div>
+                              <p class="price">from $69.0</p>
+                              <div class="color-span row">
+                                  <span class="color-circle red" onclick="showimg1()"></span>
+                                  <span class="color-circle green" onclick="document.getElementById('expandedImg').src='../../assets/images/card_2.webp'"></span>
+                                  <span class="color-circle yellow" onclick="document.getElementById('expandedImg').src='../../assets/images/card_1-1.webp'"></span>
+                              </div>
+                          </div>
+                    </div>
+        </ng-template>  
+        <ng-template carouselSlide>  <div class="product_card">
+                <div class=" product_card__image" >
+                    <img  id="expandedImg"  src="../../assets/images/card_1.webp"  onmouseover="this.src='../../assets/images/card_1-1.webp'" onmouseout="this.src='../../assets/images/card_1.webp'">
+                    <div class="popup-btn">+ quick more</div>
+                </div>
+                <div class=" product_card__description" >
+                      <div class="d-flex">
+                     <h6><a href="#">Delementum milancelos preteus tomuir</a></h6>
+                      <span class="variant-name">medium purple</span>
+                    </div>
+                      <p class="price">from $69.0</p>
+                      <div class="color-span row">
+                          <span class="color-circle red" onclick="showimg1()"></span>
+                          <span class="color-circle green" onclick="document.getElementById('expandedImg').src='../../assets/images/card_2.webp'"></span>
+                          <span class="color-circle yellow" onclick="document.getElementById('expandedImg').src='../../assets/images/card_1-1.webp'"></span>
+                      </div>
+                  </div>
+            </div></ng-template> 
+            <ng-template carouselSlide>  <div class="product_card">
+                    <div class=" product_card__image" >
+                        <img  id="expandedImg"  src="../../assets/images/card_1.webp"  onmouseover="this.src='../../assets/images/card_1-1.webp'" onmouseout="this.src='../../assets/images/card_1.webp'">
+                        <div class="popup-btn">+ quick more</div>
+                    </div>
+                    <div class=" product_card__description" >
+                          <div class="d-flex">
+                         <h6><a href="#">Delementum milancelos preteus tomuir</a></h6>
+                          <span class="variant-name">medium purple</span>
+                        </div>
+                          <p class="price">from $69.0</p>
+                          <div class="color-span row">
+                              <span class="color-circle red" onclick="showimg1()"></span>
+                              <span class="color-circle green" onclick="document.getElementById('expandedImg').src='../../assets/images/card_2.webp'"></span>
+                              <span class="color-circle yellow" onclick="document.getElementById('expandedImg').src='../../assets/images/card_1-1.webp'"></span>
+                          </div>
+                      </div>
+                </div></ng-template>  
+
+      </owl-carousel-o>
+</div>
+    <!-- <div class="product_card">
+        <div class=" product_card__image" >
+            <img  id="expandedImg"  src="../../assets/images/card_1.webp"  onmouseover="this.src='../../assets/images/card_1-1.webp'" onmouseout="this.src='../../assets/images/card_1.webp'">
+            <div class="popup-btn">+ quick more</div>
+        </div>
+        <div class=" product_card__description" >
+              <div class="d-flex">
+             <h6><a href="#">Delementum milancelos preteus tomuir</a></h6>
+              <span class="variant-name">medium purple</span>
+            </div>
+              <p class="price">from $69.0</p>
+              <div class="color-span row">
+                  <span class="color-circle red" onclick="showimg1()"></span>
+                  <span class="color-circle green" onclick="document.getElementById('expandedImg').src='../../assets/images/card_2.webp'"></span>
+                  <span class="color-circle yellow" onclick="document.getElementById('expandedImg').src='../../assets/images/card_1-1.webp'"></span>
+              </div>
+          </div>
+    </div> -->
+</div>
+
