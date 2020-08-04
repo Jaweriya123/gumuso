@@ -29,10 +29,9 @@
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.css",
-              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
-             
               "src/styles.scss",
               "src/assets/fonts/font.scss"
+
             ],
             "scripts": [
               "./node_modules/popper.js/dist/umd/popper.min.js"
@@ -98,12 +97,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/assets/fonts/font.scss"
+              "src/styles.scss"
             ],
-            "scripts": [
-              "./node_modules/jquery/dist/jquery.js"
-            ]
+            "scripts": []
           }
         },
         "lint": {

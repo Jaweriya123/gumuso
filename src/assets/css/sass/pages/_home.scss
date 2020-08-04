@@ -1,19 +1,45 @@
 .home-content{
+    position: relative;
     &__wrapper{
       position: relative;
       text-align: center;
+
     }
-    &__banner{  
-        img{
-            width: 100%;
+    &__banner{ 
+        background-image: url(../../../images/banner-parallax-1-1.webp);
+        min-height: 800px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // img{
+        //     width: 100%;
+        // }
+    }
+        &__banner-2{
+            background-image: url(../../../images/banner-parallax-3-1.webp);
+            min-height: 800px; 
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-    }
+        &__banner-3{
+            background-image: url(../../../images/banner-parallax-4-1.webp);
+            min-height: 800px; 
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    
     &__description{
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: #fff;
+        font-family: 'Rajdhani',sans-serif;
         h2{
             text-transform: uppercase;
             font-size: 30px;      
@@ -34,12 +60,31 @@
         @include black-btn(175px);
 }
 }
-.product-container{
-    max-width: 1890px;
+.products{
+    display: flex;
+    text-align: center;
+    padding: 0 40px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    .product_card{
+        max-width: 300px !important;
+    }
 }
+.product-container1{
+    max-width: 1890px;
+      position: absolute;
+      top: 91%;
+}
+//  .owl-nav {
+//     position: absolute;
+//     top: 13%;
+//     font-size: 133px;
+// }
 .product_card{
     width: 300px;
-     border: 1px solid black;
+    background: #fff;
+    //  border: 1px solid black;
     &__image{
         position: relative;
         &:hover{
@@ -123,4 +168,60 @@
         bottom: 0px;
         }
 
+}
+.countdown{
+    display: table;
+    width: 100%;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border-color:#fff; 
+    border: none;
+    margin: 22px 0; 
+    &__item{
+        width: 25%;
+        border: 1px solid #fff;
+        padding: 7px 24px;
+        text-align: center;
+        display: table-cell;
+    }
+    .num{
+        font-size: 30px;
+        line-height: 1;
+        text-transform: uppercase;
+        font-family: 'Rajdhani',sans-serif;
+        font-weight: 600;  
+    }
+    .label{
+        font-size: 14px;
+        line-height: 1;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Rajdhani',sans-serif;
+    font-weight: 600;
+    }
+}
+.countdown-img{
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    opacity: 0.7;
+    margin: 0 50px;
+    color: #fff;
+    border-collapse: unset;
+    max-width: 198px;
+   .countdown__item{
+       background: #000000;
+       padding: 5px;
+       border-radius: 5px;
+       border: none; 
+       .num{
+        font-size: 24px;
+       }
+       .label{
+           color: #5a5a5a;
+       }
+   }
 }

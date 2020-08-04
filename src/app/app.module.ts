@@ -1,11 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
-import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeContentComponent } from './home-content/home-content.component';
+
+
 
 @NgModule({
   declarations: [
@@ -15,8 +15,8 @@ import { HomeContentComponent } from './home-content/home-content.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    CarouselModule 
+    AppRoutingModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
