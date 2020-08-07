@@ -1,7 +1,6 @@
-<div class="home-content">
-    <div class="home-content__wrapper">
+<div class="home-content ">
+    <div class="home-content__wrapper ">
         <div class="home-content__banner">
-            <!-- <img src="../../assets/images/banner-parallax-1-1.webp"> -->
             <div class="home-content__description">
                 <h2>NEW RELEASES</h2>
                 <p>Quisquemos sodales suscipit ditaemcos condimentum de cosmo.</p>
@@ -19,6 +18,14 @@
                                 onmouseover="this.src='../../assets/images/card_1-1.webp'"
                                 onmouseout="this.src='../../assets/images/card_1.webp'">
                             <div class="popup-btn">+ quick more</div>
+                            <div class="product_card__label">
+                                    <a class="product_card--wishlist">
+                                            <i class="far fa-heart"></i>
+                                    </a>
+                                    <a class="product_card--quickview">
+                                            <i class="fas fa-eye"></i>
+                                    </a>     
+                            </div>
                         </div>
                         <div class=" product_card__description">
                             <div class="d-flex">
@@ -45,6 +52,14 @@
                                 onmouseover="this.src='../../assets/images/card_1-1.webp'"
                                 onmouseout="this.src='../../assets/images/card_1.webp'">
                             <div class="popup-btn">+ quick more</div>
+                            <div class="product_card__label">
+                                    <a class="product_card--wishlist">
+                                            <i class="far fa-heart"></i>
+                                    </a>
+                                    <a class="product_card--quickview">
+                                            <i class="fas fa-eye"></i>
+                                    </a>     
+                            </div>
                         </div>
                         <div class=" product_card__description">
                             <div class="d-flex">
@@ -71,6 +86,14 @@
                                 onmouseover="this.src='../../assets/images/card_1-1.webp'"
                                 onmouseout="this.src='../../assets/images/card_1.webp'">
                             <div class="popup-btn">+ quick more</div>
+                            <div class="product_card__label">
+                                    <a class="product_card--wishlist">
+                                            <i class="far fa-heart"></i>
+                                    </a>
+                                    <a class="product_card--quickview">
+                                            <i class="fas fa-eye"></i>
+                                    </a>     
+                            </div>
                         </div>
                         <div class=" product_card__description">
                             <div class="d-flex">
@@ -97,6 +120,14 @@
                                 onmouseover="this.src='../../assets/images/card_1-1.webp'"
                                 onmouseout="this.src='../../assets/images/card_1.webp'">
                             <div class="popup-btn">+ quick more</div>
+                            <div class="product_card__label">
+                                    <a class="product_card--wishlist">
+                                            <i class="far fa-heart"></i>
+                                    </a>
+                                    <a class="product_card--quickview">
+                                            <i class="fas fa-eye"></i>
+                                    </a>     
+                            </div>
                         </div>
                         <div class=" product_card__description">
                             <div class="d-flex">
@@ -120,10 +151,9 @@
 </div>
 
 
-<div class="home-content" style="margin-top: 550px;">
-    <div class="home-content__wrapper">
+<div class="home-content">
+    <div class="home-content__wrapper home-products">
         <div class="home-content__banner-2">
-            <!-- <img src="../../assets/images/banner-parallax-3-1.webp">  -->
             <div class="home-content__description">
                 <h2>NEW RELEASES</h2>
                 <p>Quisquemos sodales suscipit ditaemcos condimentum de cosmo.</p>
@@ -132,7 +162,6 @@
         </div>
     </div>
     <div class="product-container1 row products container">
-
         <div class="product-container p-2">
             <div class="product_card">
                 <div class=" product_card__image">
@@ -234,10 +263,9 @@
 </div>
 
 
-<div class="home-content" style="margin-top: 550px;">
-    <div class="home-content__wrapper">
-        <div class="home-content__banner-3">
-            <!-- <img src="../../assets/images/banner-parallax-3-1.webp">  -->
+<div class="home-content">
+    <div class="home-content__wrapper home-products">
+        <div class="home-content__banner-3" >
             <div class="home-content__description">
                 <h6>SPECIAL OFFER</h6>
                 <table border="1" class=" countdown">
@@ -304,116 +332,253 @@
             </div>
         </div>
         <div class="product-container p-2">
-                <div class="product_card">
-                    <div class=" product_card__image">
-                        <img id="expandedImg" src="../../assets/images/card_1.webp">
-                        <div class="popup-btn">Add to cart</div>
-                        <table border="1" class="countdown countdown-img">
-                            <tr>
-                                <td class="countdown__item">
-                                    <span class="num" id="days2"></span><br>
-                                    <span class="label">Days</span>
-                                </td>
-                                <td class="countdown__item">
-                                    <span class="num" id="hours2"></span>
-                                    <span class="label">hours</span>
-                                </td>
-                                <td class="countdown__item">
-                                    <span class="num" id="mins2"></span>
-                                    <span class="label">mins</span>
-                                </td>
-                                <td class="countdown__item">
-                                    <span class="num" id="secs2"></span>
-                                    <span class="label">sec</span>
-                                </td>
-                            </tr>
-                        </table>
+            <div class="product_card">
+                <div class=" product_card__image">
+                    <img id="expandedImg" src="../../assets/images/card_1.webp">
+                    <div class="popup-btn">Add to cart</div>
+                    <table border="1" class="countdown countdown-img">
+                        <tr>
+                            <td class="countdown__item">
+                                <span class="num" id="days2"></span><br>
+                                <span class="label">Days</span>
+                            </td>
+                            <td class="countdown__item">
+                                <span class="num" id="hours2"></span>
+                                <span class="label">hours</span>
+                            </td>
+                            <td class="countdown__item">
+                                <span class="num" id="mins2"></span>
+                                <span class="label">mins</span>
+                            </td>
+                            <td class="countdown__item">
+                                <span class="num" id="secs2"></span>
+                                <span class="label">sec</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class=" product_card__description">
+                    <div class="d-flex">
+                        <h6><a href="#">Delementum milancelos preteus tomuir</a></h6>
+                        <span class="variant-name">medium purple</span>
                     </div>
-                    <div class=" product_card__description">
-                        <div class="d-flex">
-                            <h6><a href="#">Delementum milancelos preteus tomuir</a></h6>
-                            <span class="variant-name">medium purple</span>
-                        </div>
-                        <p class="price">from $69.0</p>
+                    <p class="price">from $69.0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-container p-2">
+            <div class="product_card">
+                <div class=" product_card__image">
+                    <img id="expandedImg" src="../../assets/images/card_1.webp">
+                    <div class="popup-btn">Add to cart</div>
+                    <table border="1" class="countdown countdown-img">
+                        <tr>
+                            <td class="countdown__item">
+                                <span class="num" id="days3"></span><br>
+                                <span class="label">Days</span>
+                            </td>
+                            <td class="countdown__item">
+                                <span class="num" id="hours3"></span>
+                                <span class="label">hours</span>
+                            </td>
+                            <td class="countdown__item">
+                                <span class="num" id="mins3"></span>
+                                <span class="label">mins</span>
+                            </td>
+                            <td class="countdown__item">
+                                <span class="num" id="secs3"></span>
+                                <span class="label">sec</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class=" product_card__description">
+                    <div class="d-flex">
+                        <h6><a href="#">Delementum milancelos preteus tomuir</a></h6>
+                        <span class="variant-name">medium purple</span>
+                    </div>
+                    <p class="price">from $69.0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-container p-2">
+            <div class="product_card">
+                <div class=" product_card__image">
+                    <img id="expandedImg" src="../../assets/images/card_1.webp">
+                    <div class="popup-btn">Add to cart</div>
+                    <table border="1" class="countdown countdown-img">
+                        <tr>
+                            <td class="countdown__item">
+                                <span class="num" id="days4"></span><br>
+                                <span class="label">Days</span>
+                            </td>
+                            <td class="countdown__item">
+                                <span class="num" id="hours4"></span>
+                                <span class="label">hours</span>
+                            </td>
+                            <td class="countdown__item">
+                                <span class="num" id="mins4"></span>
+                                <span class="label">mins</span>
+                            </td>
+                            <td class="countdown__item">
+                                <span class="num" id="secs4"></span>
+                                <span class="label">sec</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class=" product_card__description">
+                    <div class="d-flex">
+                        <h6><a href="#">Delementum milancelos preteus tomuir</a></h6>
+                        <span class="variant-name">medium purple</span>
+                    </div>
+                    <p class="price">from $69.0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--latest blog section -->
+<div class="blog ">
+    <div class="blog__wrapper container">
+        <div class="blog__title">
+            <h2>latest post</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-6 blog__content">
+                <div class="blog__image hoverimg">
+                    <a href="#"><img
+                            src="../../assets/images/blog-8_770x570.webp"></a>
+                </div>
+                <div class="featured-blog">
+                    <h3 class="featured-blog__title">
+                        <a href="" >Lorem de Turpis an Milance</a>
+                    </h3>
+                    <div class="featured-blog__meta">
+                        <span class="featured-blog__meta--item featured-blog__date">
+                            on <time datetime="2020-01-09T09:49:00Z">January 9, 2020</time>
+                        </span>
+                        <span class="featured-blog__meta--item featured-blog__author" > &nbsp;&nbsp;/ &nbsp;&nbsp;by Halo Themes</span>
+                    </div>
+                    <div class="featured-blog__excerpt">
+                        <span>Nam tempus turpis at metus scelerisque placerat nulla deumantos sollicitudin felis.
+                            Pellentesque diam dolor, elementum et lobortis at, mollis ut risus. Sedcuman delo an
+                            faucibus sullamcorper mattis fusce molestie...</span>
+                    </div>
+                    <div class="featured-blog__button">
+                        <a href="#" class="btn btn--primary" aria-label="link" tabindex="0">Read more</a>
                     </div>
                 </div>
             </div>
-
-            <div class="product-container p-2">
-                    <div class="product_card">
-                        <div class=" product_card__image">
-                            <img id="expandedImg" src="../../assets/images/card_1.webp">
-                            <div class="popup-btn">Add to cart</div>
-                            <table border="1" class="countdown countdown-img">
-                                <tr>
-                                    <td class="countdown__item">
-                                        <span class="num" id="days3"></span><br>
-                                        <span class="label">Days</span>
-                                    </td>
-                                    <td class="countdown__item">
-                                        <span class="num" id="hours3"></span>
-                                        <span class="label">hours</span>
-                                    </td>
-                                    <td class="countdown__item">
-                                        <span class="num" id="mins3"></span>
-                                        <span class="label">mins</span>
-                                    </td>
-                                    <td class="countdown__item">
-                                        <span class="num" id="secs3"></span>
-                                        <span class="label">sec</span>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class=" product_card__description">
-                            <div class="d-flex">
-                                <h6><a href="#">Delementum milancelos preteus tomuir</a></h6>
-                                <span class="variant-name">medium purple</span>
-                            </div>
-                            <p class="price">from $69.0</p>
-                        </div>
+            <div class="col-md-6  col-lg-6 col-sm-6  blog__content">
+                <div class="blog__image hoverimg">
+                    <a href="#"><img
+                            src="../../assets/images/blog-2_0247acf9-6e40-4808-89c8-517de41d3920_770x570.webp"></a>
+                </div>
+                <div class="featured-blog">
+                    <h3 class="featured-blog__title">
+                        <a href="" aria-label="link" tabindex="0">SPECIAL OFFER: MOLLIS DELLUS AN MALESUO</a>
+                    </h3>
+                    <div class="featured-blog__meta">
+                        <span class="featured-blog__meta--item featured-blog__date">
+                            on <time datetime="2020-01-09T09:49:00Z">January 9, 2020</time>
+                        </span>
+                        <span class="featured-blog__meta--item featured-blog__author">by Halo Themes</span>
+                    </div>
+                    <div class="featured-blog__excerpt">
+                        <span>Nam tempus turpis at metus scelerisque placerat nulla deumantos sollicitudin felis.
+                            Pellentesque diam dolor, elementum et lobortis at, mollis ut risus. Sedcuman delo an
+                            faucibus sullamcorper mattis fusce molestie...</span>
+                    </div>
+                    <div class="featured-blog__button">
+                        <a href="#" class="btn btn--primary" aria-label="link" tabindex="0">Read more</a>
                     </div>
                 </div>
-
-                <div class="product-container p-2">
-                        <div class="product_card">
-                            <div class=" product_card__image">
-                                <img id="expandedImg" src="../../assets/images/card_1.webp">
-                                <div class="popup-btn">Add to cart</div>
-                                <table border="1" class="countdown countdown-img">
-                                    <tr>
-                                        <td class="countdown__item">
-                                            <span class="num" id="days4"></span><br>
-                                            <span class="label">Days</span>
-                                        </td>
-                                        <td class="countdown__item">
-                                            <span class="num" id="hours4"></span>
-                                            <span class="label">hours</span>
-                                        </td>
-                                        <td class="countdown__item">
-                                            <span class="num" id="mins4"></span>
-                                            <span class="label">mins</span>
-                                        </td>
-                                        <td class="countdown__item">
-                                            <span class="num" id="secs4"></span>
-                                            <span class="label">sec</span>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class=" product_card__description">
-                                <div class="d-flex">
-                                    <h6><a href="#">Delementum milancelos preteus tomuir</a></h6>
-                                    <span class="variant-name">medium purple</span>
-                                </div>
-                                <p class="price">from $69.0</p>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
     </div>
 </div>
+<!--gellery blog-->
+<div class="image-gellery">
+    <div class="image-gellery__wrapper">
+        <div class="image-gellery__tilte text-center">
+            <h2>IMAGE GALLERY</h2>
+            <h3>@GYMUSO APPAREL</h3>
+            <p>This is an image gallery block but you can use this block as an instagram feed by installing an instagram app</p>
+        </div>
+
+<!-- image gellery desktop grid-->
+        <div class="image-gellery--container  image-gellery--desktop" >
+              <div class="row m-0">
+                  <div class="col-lg-5 col-md-5 p-0 hoverimg"><img  src="../../assets/images/instagram-1.webp"></div>
+                  <div class="col-lg-7 col-md-7 p-0 " >
+                      <div class="row m-0 small--images">
+                          <div class="col-lg-4 col-md-4  p-0 hoverimg"><img src="../../assets/images/instagram-2_380x.webp"></div>
+                          <div class="col-lg-4 col-md-4 p-0 hoverimg"><img src="../../assets/images/instagram-8_380x.webp"></div>
+                          <div class="col-lg-4 col-md-4 p-0 hoverimg"><img src="../../assets/images/instagram-8_380x.webp"></div>
+                      </div>
+                      <div class="row m-0 small--images">
+                            <div class="col-lg-4 col-md-4 p-0 hoverimg"><img src="../../assets/images/instagram-2_380x.webp"></div>
+                            <div class="col-lg-4 col-md-4 p-0 hoverimg"><img src="../../assets/images/instagram-8_380x.webp"></div>
+                            <div class="col-lg-4 col-md-4  p-0 hoverimg"><img src="../../assets/images/instagram-8_380x.webp"></div>
+                        </div>
+                  </div>
+
+              </div>
+              <div class="row m-0 image-gellery__add-more">
+                  <p id="plus"><a href="javascript:void(0)" onclick="loadimg()" aria-label="link" aria-describedby="a11y-external-message" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>
+                    </a></p>
+
+                    <div class="col-md-12 col-lg-12 p-0" id="expandedgellery">
+                        <div class="row m-0 small--images">
+                                <div class="col-md-2 col-lg-2 hoverimg p-0"><img src="../../assets/images/instagram-2_380x.webp"></div>
+                                <div class="col-md-3 col-lg-3 hoverimg p-0"><img src="../../assets/images/instagram-8_380x.webp"></div>
+                                <div class="col-md-2 col-lg-2 hoverimg p-0"><img src="../../assets/images/instagram-2_380x.webp"></div>
+                                <div class="col-md-3 col-lg-3 hoverimg p-0"><img src="../../assets/images/instagram-8_380x.webp"></div>
+                        </div>
+                    </div>
+              </div>
+        </div>
+<!-- image gellery mobile grid-->
+        <div class="image-gellery--container  image-gellery--mobile d-lg-none">
+           
+            <div class="row m-0">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-12 p-0">
+                    <div class="row m-0">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-0"><img src="../../assets/images/instagram-2_380x.webp" ></div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-0"><img src="../../assets/images/instagram-8_380x.webp"></div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-0"><img src="../../assets/images/instagram-8_380x.webp"></div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-0"><img src="../../assets/images/instagram-2_380x.webp"></div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-0"><img src="../../assets/images/instagram-8_380x.webp"></div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-0"><img src="../../assets/images/instagram-8_380x.webp"></div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-0"><img src="../../assets/images/instagram-2_380x.webp"></div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-0"><img src="../../assets/images/instagram-8_380x.webp"></div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-6 p-0"><img src="../../assets/images/instagram-8_380x.webp"></div>
+                    </div>
+                </div>
+            </div>
+                <div class="row m-0 image-gellery__add-more">
+                    <p id="plusmob"><a href="javascript:void(0)" onclick="loadimg1()" aria-label="link" aria-describedby="a11y-external-message" >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z"/></svg>
+                      </a></p>
+  
+                      <div class="col-md-12 col-lg-12 col-sm-12 col-12 p-0 " id="expandedgellerymobile">
+                          <div class="row m-0 small--images">
+                                  <div class="col-md-4 col-lg-4 col-sm-6 col-6 p-0"><img src="../../assets/images/instagram-2_380x.webp"></div>
+                                  <div class="col-md-4 col-lg-4 col-sm-6 col-6 p-0"><img src="../../assets/images/instagram-8_380x.webp"></div>
+                                  <div class="col-md-4 col-lg-4 col-sm-6 col-6 p-0"><img src="../../assets/images/instagram-2_380x.webp"></div>
+                                  <div class="col-md-4 col-lg-4 col-sm-6 col-6 p-0"><img src="../../assets/images/instagram-8_380x.webp"></div>
+                          </div>
+                      </div>
+                </div>
+          </div>
 
 
+    </div>
+</div>
 <!-- <div class="product-container">
         <div class="product_card">
                 <div class=" product_card__image" >

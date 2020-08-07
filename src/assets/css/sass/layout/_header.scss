@@ -1,5 +1,5 @@
 .announcment-msg{
-z-index: 2;
+    z-index: 2;
     position: relative;
     font-size: 11px;
     color: #5a5a5a;
@@ -22,8 +22,9 @@ z-index: 2;
 }
 
 .header-PC{
+    z-index: 10;
     background: black;
-    height: 70px;
+    height: 75px;
    &__container{
     max-width: 1890px;
     display: flex;
@@ -90,8 +91,7 @@ z-index: 2;
        }
    }
    &__right--section{
-      width: calc(50% - 125px);
-     
+      width: calc(50% - 125px); 
     }
     &__middle--section{
       width: 250px;

@@ -49,6 +49,28 @@
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     }
 }
+@mixin hoverimg {
+    .hoverimg{
+        &:after {
+            content:'';
+            position:absolute;
+            width:100%; height:100%;
+            top:0; left:0;
+            background:rgba(0,0,0,0.3);
+            opacity:0;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+        }
+        &:hover{
+            &:after {
+            opacity:1;
+            overflow: hidden;
+            transform: translate(0,0px);
+        }
+        }
+    
+}
+}
 @mixin media-breakpoint-between{
     @media (max-width: 1015px) {
         .site-nav{
@@ -87,5 +109,22 @@
         }
     }
     }
+    .image-gellery--desktop{
+        display: none;
     }
+    .image-gellery--mobile{
+        display: block;
+    }
+    .home-content{
+    &__banner{
+        background-attachment: fixed;
+    }
+    &__banner2{
+        background-attachment: fixed;
+    }
+    &__banner3{
+        background-attachment: fixed;
+    }
+    }
+}
 }

@@ -57,6 +57,7 @@ $(document).ready(function () {
         }
 
     })
+
 //     $("#compagn-banner-slider").owlCarousel({
 
 //         loop: true,
@@ -179,22 +180,7 @@ $(document).ready(function () {
 
 // }
 
-// function myFunction(imgs) {
-//     let thumbnails = document.getElementsByClassName('thumbnail');
-//     let activeImages = document.getElementsByClassName('active');
-//     for (var i=0; i < thumbnails.length; i++){
-//         thumbnails[i].addEventListener('click', function(){
-// 				if (activeImages.length > 0){
-// 					activeImages[0].classList.remove('active')
-//                 }
-//                 this.classList.add('active')
 
-//                 document.getElementById('expandedImg').src = this.src;
-                
-//     })
-// }
-
-// }
 function showimg1() 
 {
         document.getElementById("expandedImg").src = "../../assets/images/card_1.webp";  
@@ -245,19 +231,19 @@ var myfunc2 = setInterval(function() {
     
         
     // Result is output to the specific element
-    document.getElementById("days1").innerHTML = days + " "
-    document.getElementById("hours1").innerHTML = hours + " " 
-    document.getElementById("mins1").innerHTML = minutes + " " 
-    document.getElementById("secs1").innerHTML = seconds + " " 
+    document.getElementById("days1").innerHTML = days 
+    document.getElementById("hours1").innerHTML = hours 
+    document.getElementById("mins1").innerHTML = minutes 
+    document.getElementById("secs1").innerHTML = seconds 
         
     // Display the message when countdown is over
     if (timeleft < 0) {
         clearInterval(myfunc2);
-        document.getElementById("days1").innerHTML = ""
-        document.getElementById("hours1").innerHTML = "" 
-        document.getElementById("mins1").innerHTML = ""
-        document.getElementById("secs1").innerHTML = ""
-        document.getElementById("end").innerHTML = "TIME UP!!";
+        // document.getElementById("days1").innerHTML = ""
+        // document.getElementById("hours1").innerHTML = "" 
+        // document.getElementById("mins1").innerHTML = ""
+        // document.getElementById("secs1").innerHTML = ""
+        // document.getElementById("end").innerHTML = "TIME UP!!";
      
     }
 }, 1000);
@@ -274,19 +260,19 @@ var myfunc3 = setInterval(function() {
     
         
     // Result is output to the specific element
-    document.getElementById("days2").innerHTML = days + " "
-    document.getElementById("hours2").innerHTML = hours + " " 
-    document.getElementById("mins2").innerHTML = minutes + " " 
-    document.getElementById("secs2").innerHTML = seconds + " " 
+    document.getElementById("days2").innerHTML = days 
+    document.getElementById("hours2").innerHTML = hours 
+    document.getElementById("mins2").innerHTML = minutes 
+    document.getElementById("secs2").innerHTML = seconds  
         
     // Display the message when countdown is over
     if (timeleft < 0) {
         clearInterval(myfunc2);
-        document.getElementById("days2").innerHTML = ""
-        document.getElementById("hours2").innerHTML = "" 
-        document.getElementById("mins2").innerHTML = ""
-        document.getElementById("secs2").innerHTML = ""
-        document.getElementById("end").innerHTML = "TIME UP!!";
+        // document.getElementById("days2").innerHTML = ""
+        // document.getElementById("hours2").innerHTML = "" 
+        // document.getElementById("mins2").innerHTML = ""
+        // document.getElementById("secs2").innerHTML = ""
+        // document.getElementById("end").innerHTML = "TIME UP!!";
      
     }
 }, 1000);
@@ -302,19 +288,19 @@ var myfunc3 = setInterval(function() {
     
         
     // Result is output to the specific element
-    document.getElementById("days3").innerHTML = days + " "
-    document.getElementById("hours3").innerHTML = hours + " " 
-    document.getElementById("mins3").innerHTML = minutes + " " 
-    document.getElementById("secs3").innerHTML = seconds + " " 
+    document.getElementById("days3").innerHTML = days 
+    document.getElementById("hours3").innerHTML = hours 
+    document.getElementById("mins3").innerHTML = minutes 
+    document.getElementById("secs3").innerHTML = seconds 
         
     // Display the message when countdown is over
     if (timeleft < 0) {
         clearInterval(myfunc2);
-        document.getElementById("days3").innerHTML = ""
-        document.getElementById("hours3").innerHTML = "" 
-        document.getElementById("mins3").innerHTML = ""
-        document.getElementById("secs3").innerHTML = ""
-        document.getElementById("end").innerHTML = "TIME UP!!";
+        // document.getElementById("days3").innerHTML = ""
+        // document.getElementById("hours3").innerHTML = "" 
+        // document.getElementById("mins3").innerHTML = ""
+        // document.getElementById("secs3").innerHTML = ""
+        // document.getElementById("end").innerHTML = "TIME UP!!";
      
     }
 }, 1000);
@@ -327,22 +313,30 @@ var myfunc3 = setInterval(function() {
     var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-    
         
     // Result is output to the specific element
-    document.getElementById("days4").innerHTML = days + " "
-    document.getElementById("hours4").innerHTML = hours + " " 
-    document.getElementById("mins4").innerHTML = minutes + " " 
-    document.getElementById("secs4").innerHTML = seconds + " " 
-        
+    document.getElementById("days4").innerHTML = days 
+    document.getElementById("hours4").innerHTML = hours 
+    document.getElementById("mins4").innerHTML = minutes 
+    document.getElementById("secs4").innerHTML = seconds 
     // Display the message when countdown is over
     if (timeleft < 0) {
         clearInterval(myfunc2);
-        document.getElementById("days4").innerHTML = ""
-        document.getElementById("hours4").innerHTML = "" 
-        document.getElementById("mins4").innerHTML = ""
-        document.getElementById("secs4").innerHTML = ""
-        document.getElementById("end").innerHTML = "TIME UP!!";
+        // document.getElementById("days4").innerHTML = ""
+        // document.getElementById("hours4").innerHTML = "" 
+        // document.getElementById("mins4").innerHTML = ""
+        // document.getElementById("secs4").innerHTML = ""
+        // document.getElementById("end").innerHTML = "TIME UP!!";
      
     }
 }, 1000);
+
+function loadimg() {
+  document.getElementById("expandedgellery").style.display = "block";
+  document.getElementById("plus").style.display = "none";
+ }
+ function loadimg1() {
+    document.getElementById("expandedgellerymobile").style.display = "block";
+    document.getElementById("plusmob").style.display = "none";
+}
+
