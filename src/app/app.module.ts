@@ -4,7 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { ProductpageComponent } from './productpage/productpage.component';
+import { SidemenuComponent } from './header/sidemenu/sidemenu.component';
+// import { ProductpageComponent } from './productpage/productpage.component';
 
 
 
@@ -13,7 +14,8 @@ import { ProductpageComponent } from './productpage/productpage.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ProductpageComponent,
+    SidemenuComponent,
+    // ProductpageComponent,
   ],
   imports: [
     BrowserModule,

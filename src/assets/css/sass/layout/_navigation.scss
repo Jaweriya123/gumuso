@@ -8,6 +8,7 @@
     background-color:transparent;
     overflow-y: auto;
     transition: all 0.4s ease;
+    font-family: $primary-font;
 
     &__closebtn{
         width: 12%;
@@ -15,7 +16,7 @@
         right: 4px;
         top: 7px;
         position: absolute;
-        background: $primary-color !important;
+        background: $secondery-color !important;
         text-align: center;
         svg{
             width: 15px;
@@ -23,11 +24,42 @@
             fill:$secondery-color;
         }
     }
+    &__currency{
+        .currency_heading{
+            background:$white-nav2;
+            padding: 12px;
+            color: $text-color;
+            text-transform: uppercase;
+            a{
+                text-decoration: none;
+            }
+        }  
+        .lang__container{
+            display: flex;
+            padding: 0 41px;
+            text-decoration: none;
+            .img-container{
+                width: 245px;
+            }
+            img{
+                height: 40px;
+                width: 40px;
+            }
+            span{
+                padding: 12px;
+                color: $text-color;
+            }
+        }      
+    }
        nav{
         width: 87%;
         height: 100%;
         background-color:$secondery-color;
         @include side-content-style();
+        .icon_user{
+            font-size: 20px;
+            padding-right: 12px;
+        }
         }
     }
  
@@ -52,22 +84,22 @@
             text-align: center;
             text-transform: uppercase;
             font-size: 14px;
-            background-color: #f8f8f8;
+            background-color: $white-nav2;
             border-bottom: 1px solid #dddddd;
              &__icon{
                 float: left;
                 i{
-                    color: gray;
+                    color:$text-color;
                     opacity: .5;
                     font-size: 18px;
                    }
             }
-
         }
+
          @include side-content-style();
          .shop_now{
             background-color:$sidebar-button;
-            color: $secondery-color;
+            color:$primary-color;
             text-transform: uppercase;
             outline: none;
             width: 211px;

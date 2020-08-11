@@ -1,3 +1,35 @@
+@mixin side-content-style{
+    .side-navigation__content{
+        padding: 0;
+        .dropdown-item{
+           list-style: none;
+           border-bottom: 1px solid #dddddd;
+           padding-bottom: 9px;
+           padding-right: 2px;
+           padding-top: 9px;
+           background: transparent;
+           a{
+               text-decoration: none;
+               color:$primary-color;
+               font-size: 13px;
+               font-weight: 500;
+               text-transform: uppercase;
+           }
+           &__icon{
+              float: right;
+              font-size: 16px;
+              height: 40px;
+               width: 40px;
+               text-align: center;
+              i{
+               color: $product-card-price;
+               opacity: .5;
+               font-size: 18px;
+              }
+           }
+       }
+   }
+}
 @mixin hover_line($background, $width) {
     &::after{
         content: '';
@@ -18,16 +50,16 @@
     .nav-action{
         padding-top: 5px !important;
         padding-bottom: 4px !important;
-        @include hover_line(#000, 60%);
+        @include hover_line($primary-color, 60%);
           a{
-            color:  #5a5a5a !important;
+            color:  $text-color !important;
             font-family: 'Arimo',sans-serif !important;
             text-transform: none;
             text-decoration: none;
             font-weight: 400;
             width: 100%;
             &:hover{
-                color: #000 !important;
+                color:$primary-color !important;
             }
         }
 }
@@ -38,11 +70,11 @@
     font-family: 'Rajdhani',sans-serif;
     font-style: normal;
     font-weight: 700;
-    background-color: #1e1e1e;
+    background-color: $header-form-border;
     padding: 10px 30px 10px 30px;
-    border: 1px solid #1e1e1e; 
+    border: 1px solid $header-form-border; 
     width: $width;
-    color: #fff;
+    color: $secondery-color;
     text-align: center;
     border-radius: 0px;
     &:hover{
@@ -73,6 +105,9 @@
 }
 @mixin media-breakpoint-between{
     @media (max-width: 1015px) {
+        .select-color{
+            display: none;
+        }
         .site-nav{
             display: none;
         }
@@ -90,7 +125,7 @@
         padding: 11px 54px;
         width: 100%;
         justify-content: space-between;
-        background: #000;
+        background: $primary-color;
         height: 50px;
        &__container{
            display: flex;
@@ -102,7 +137,7 @@
           li{
              margin-right:12px; 
              i{
-                color: #fff;
+                color: $secondery-color;
                 font-size:25px;
                }
           }
@@ -126,5 +161,11 @@
         background-attachment: fixed;
     }
     }
+ 
+        .product-btn {
+            button{
+                margin-bottom: 8px;
+            }
+        }
 }
 }

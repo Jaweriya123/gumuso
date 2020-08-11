@@ -285,8 +285,8 @@
                                             Email
                                             <em class="text-danger">*</em>
                                         </label>
-                                        <input id="customer_email" class="form-control" type="email" value=""
-                                            name="email" placeholder="Email">
+                                        <input id="customer_email1" class="form-control" type="email" value=""
+                                            name="email" placeholder="Email" autocomplete="off">
                                     </div>
 
                                     <div class="form-field">
@@ -294,7 +294,7 @@
                                             Password
                                             <em class="text-danger">*</em>
                                         </label>
-                                        <input id="customer_pass" class="form-control" type="password" value=""
+                                        <input id="customer_pass1" class="form-control" type="password" value=""
                                             name="password" placeholder="password">
                                     </div>
                                     <div class="form-actions text-center ">
@@ -328,7 +328,7 @@
             <div class="header-mobile__container row">
                 <div class="header-mobile__left">
                     <ul class="mobile-nav row">
-                        <li><i class="fas fa-bars"></i></li>
+                        <li><i class="fas fa-bars" onclick="openNav()"></i></li>
                         <li><i class="fas fa-search"></i></li>
                     </ul>
                 </div>
@@ -351,7 +351,7 @@
                                         <em class="text-danger">*</em>
                                     </label>
                                     <input id="customer_email" class="form-control" type="email" value="" name="email"
-                                        placeholder="Email">
+                                        placeholder="Email " autocomplete="off">
                                 </div>
 
                                 <div class="form-field">
@@ -387,3 +387,4 @@
                 <div class="slider-text3">Free Domestic Shipping on all orders over $149</div>
            </div>
 </div>
+<app-sidemenu></app-sidemenu>
